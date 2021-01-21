@@ -8,7 +8,7 @@ $(window).on("load", function() {
           $("#loader").fadeOut(1500);
         });
       });
-  }, 2000);
+  }, 500);
   });
 
 const canvas = document.getElementById("canvas");

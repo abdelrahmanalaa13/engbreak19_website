@@ -7,6 +7,6 @@ $(function(){
             $("#loader").fadeOut(500);
             $("#navbar").css("visibility", "visible");
           });
-      }, 2000);
+      }, 500);
       });
 });

@@ -7,7 +7,7 @@ $(window).on("load", function() {
         $(".logo_event").addClass("loaded");
             $("#loader").fadeOut(3000);
         });
-  }, 4000);
+  }, 500);
 });
 
 
