@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+}
+html{
+    overflow-y:initial;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #05486C
+}
+.intro{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    text-align: left;
+    width: 100%;
+    z-index: 99;
+}
+nav img{
+    height: 60px;
+    width: auto;
+    margin: 25px;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50px;
+    background-color: #05486C;
+    width: 100%;
+    opacity: 1;
+    height: 100%;
+    margin: 0 auto;
+    clear: both;
+}
+.goBack{
+    display: none;
+}
+.wrapper .goBack{
+    display: initial;
+    background: #FFF;
+    vertical-align: middle;
+    position: absolute;
+    left: 8px;
+    top: 45%;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 11px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.wrapper .goBack:hover{
+    transform: scale(1.1);
+
+}
+.form {
+    display: block;
+    
+}
+.form_title{
+    display: block;
+    font-size: 39px;
+    color: #05486C;
+    line-height: 1.2;
+    text-align: center;
+    font-family: Baloo;
+}
+/*FORM STYLE*/
+.divform
+{
+	
+	background-color: white;
+	width: 80%;
+	
+	border-radius: 20px;
+
+
+}
+.wrapperr
+{
+	width: 90%;
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 3%;
+}
+
+input , select ,textarea{
+	width: 80%;
+    height: 50px;
+
+}
+label
+{
+	display: inline-block;
+	padding-bottom: 10px;
+}
+input[type="submit"]
+{
+	-moz-box-shadow: inset 0px 1px 0px 0px #05486C;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #05486C;
+	box-shadow: inset 0px 1px 0px 0px #05486C;
+	background-color: #05486C;
+	border: 1px solid #05486C;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	padding: 8px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 20%;
+
+	margin-top:20px;
+	margin: 30px;
+     margin-left: 40%;
+	border-radius: 30px;
+}
+input[type="submit"]:hover {
+	
+	background-color:#05486ce6;
+}
+input[type="text"], input[type="number"], input[type="url"], input[type="email"],select,textarea
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border-bottom: 1px solid #ddd;
+	border: solid 1px #ddd;
+    transition: border 0.3s linear;
+	background: transparent;
+	margin-bottom: 50px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 50px;
+}
+input[type="text"]:focus, input[type="number"]:focus,input[type="url"]:focus, input[type="email"]:focus ,select:focus,textarea:focus
+{
+	border: 1px solid #05486C;
+	border-radius: 10px;
+	border-width: 2px;
+}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+/* FORM RESPONSIVE*/
+@media only screen and (width: 1024px) and (min-width: 1222px)
+{
+	
+	input[type="text"], input[type="number"],input[type="url"], input[type="email"],select,textarea
+	{
+		margin: 50px 0;
+	}
+	label
+	{
+		padding: 0;
+		margin: 0;
+	}
+	img
+	{  width:25%;
+		padding-top:30px;
+		margin-left:38%
+	}
+	.wrapperr
+    {
+        width: 90%;
+        max-width: 900px;
+        margin: 50 auto;
+        padding: 3%;
+    }
+}
+
+@media only screen and (max-width:960px)
+{
+  input[type="submit"]
+   {
+   	width: 25%;
+   	margin-left: 38%; 
+   }
+   .wrapperr
+   {
+   	padding-top:20px; 
+   }
+}
+@media only screen and (max-width:760px)
+{
+	 input[type="submit"]
+   {
+   	width: 35%;
+   	margin-left: 33%; 
+   }
+   .wrapperr
+   {
+       padding-top:20px; 
+       clear: both;
+   }
+
+}
+@media only screen and (max-width: 480px)
+{
+   input[type="submit"]
+   {
+   	width: 50%;
+   	margin-left: 25%; 
+   }
+   .wrapperr
+   {
+   	padding-top:35px; 
+   }
+}
+textarea{
+    height: auto;
+}
+
+/*slider RESPONSIVE */
+
+@media only screen 
+and (max-width : 320px) 
+ {
+    .hide
+    {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      padding-top: 12%;
+    }
+
+}
+@media only screen 
+and (min-width : 320px) 
+and (max-width : 375px) {
+    .hide
+    {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      padding-top: 12%;
+    }
+ 
+}
+@media only screen 
+and (min-width : 375px) 
+and (max-width : 480px) {
+    .hide
+    {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+    }
+ 
+}
+@media only screen  
+and (max-width : 1200px) {
+    .wrapper .goBack {
+        display: initial;
+        background: #FFF;
+        vertical-align: middle;
+        position: absolute;
+        left: 45%;
+        top: 12%;
+        padding: 10px;
+        margin: 8px;
+        border-radius: 11px;
+        color: #05486C;
+        text-align: center;
+        text-decoration: none;
+        transition: all .3s;
+        font-size: 30px;
+        margin: 0 auto;
+    }
+}
+
+.sponsor{
+    text-align: center;
+    margin: 15px auto;
+    cursor: context-menu;
+}
+.sponsor div {
+    display: inline-block;
+    margin: 20px;
+}
+.sponsor p{
+    color: gold;
+    padding: 5px;
+    font-size: 25px;
+    font-family: 'Titillium Web', sans-serif;
+    text-shadow: 1px 1px rgba(101, 182, 230,.4);
+}
+.sponsor img{
+    width: 200px
+}
+
+@media only screen  
+and (max-width : 780px) {
+/* Styles */
+    .slider{
+        height: 300px;
+    }
+    .slider li {
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+    .hide
+    {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      padding-top: 12%;
+    }
+    body{
+    overflow: auto;
+    }
+    .apply{
+        padding: 10px;
+        font-size: 13px;
+    }
+    nav img {
+    height: 35px;
+        
+    }
+}
+@media only screen and (min-height:400px) and (max-width : 780px){
+        .apply{
+            display:none;
+        }
+}
+@media only screen and (max-width : 450px) {
+    nav img {
+    margin: 12px;
+    }
+    .slider{
+        height: 235px;
+    }
+}
+@media only screen 
+and (min-width : 780px) 
+and (max-width : 2560px) {
+/* Styles */
+    .slider li {
+        background-position: bottom;
+        background-size: cover;
+    }
+}
+.sponsor input {
+    width: initial;
+    height: initial;
+}
+p.sponsor_Qus{
+    display: block;
+    font-size: 14px;
+    color: #01172d;
+    line-height: 2;
+    padding-bottom: 27px;
+    cursor: context-menu;
+}
+#yes {
+    margin: 25px 25px 25px 0;
+}

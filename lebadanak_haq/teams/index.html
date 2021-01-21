@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lebadanak Haq 4.0</title>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Lebadanak Haq 4.0" />
+    <meta name="description" content="Lebadanak Haq 4.0 - Eng Break'19">
+    <meta name="keywords" content="Engbreak,Lebadanak,Haq,Engbreak19">
+    <meta name="author" content="Eng Break">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://engbreak19.com/lebadanak_haq/" />    
+    <meta property="og:image" content="http://engbreak19.com/lebadanak_haq/img/cover.jpeg" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Open+Sans|Sarala" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+</head>
+<body>
+    <header class="intro">
+        
+      <nav>
+          <a href="../"><img src="img/engbreak_logo.png" alt="engbreak_logo" /></a>
+        </nav>      
+<div class="wrapper">
+     
+    
+  <div id="aForm" class="wrapperr divform responsive">
+    <h2 class="form_title">Registration Form</h2>
+    <form action="submit.php" method="POST"  class=" validate-form">
+      <div class="wrap-input100 validate-input" data-validate = "You have to enter at lest 5 main players">
+        <input class="input100" type="text" name="leader">
+        <span class="focus-input100"></span>
+        <span class="label-input100">The name of the <b>Leader</b> of the team</span>
+      </div>
+      <div class="wrap-input100 validate-input" data-validate = "You have to enter at lest 5 main players">
+        <input class="input100" type="text" name="player1">
+        <span class="focus-input100"></span>
+        <span class="label-input100">Team Player 1</span>
+      </div>
+      <div class="wrap-input100 validate-input" data-validate = "You have to enter at lest 5 main players">
+        <input class="input100" type="text" name="player2">
+        <span class="focus-input100"></span>
+        <span class="label-input100">Team Player 2</span>
+      </div>
+      <div class="wrap-input100 validate-input" data-validate = "You have to enter at lest 5 main players">
+        <input class="input100" type="text" name="player3">
+        <span class="focus-input100"></span>
+        <span class="label-input100">Team Player 3</span>
+      </div>
+      <div class="wrap-input100 validate-input" data-validate = "You have to enter at lest 5 main players">
+        <input class="input100" type="text" name="player4">
+        <span class="focus-input100"></span>
+        <span class="label-input100">Team Player 4</span>
+      </div>
+      <div class="wrap-input100">
+        <input class="input100" type="text" name="reserve1">
+        <span class="focus-input100"></span>
+        <span class="label-input100">Reserve player 1 *optional*</span>
+      </div>
+      <div class="wrap-input100">
+        <input class="input100" type="text" name="reserve2">
+        <span class="focus-input100"></span>
+        <span class="label-input100">Reserve player 2 *optional*</span>
+      </div>
+
+      <div>
+        <p class="note"><b>"The Players that you had entered their names must Register from this <a href="http://engbreak19.com/lebadanak_haq/" target="_blank">Link</a> and buy the Tickets"</b></p>
+      </div>
+
+        
+      <div class="container-login100-form-btn">
+        <input name="submit" value="submit" type="submit" class="login100-form-btn">
+        
+      </div>
+    </form>
+
+  </div>
+
+  <div class="sponsor">
+    <p>Sponsored By</p>
+  <div>
+      <a href="https://tactful.ai/" target="_blank">
+          <img src="img/Tactful_logo.png" alt="Tactful">
+      </a>
+  </div> 
+  <div>
+      <a href="http://www.clslearn.com/" target="_blank">
+          <img src="img/cls.png" alt="Cls Learn">
+    </a>
+  </div>
+</div>
+
+</header>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+  </script>
+
+</body>
+</html>

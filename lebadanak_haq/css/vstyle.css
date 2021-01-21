@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Vrow
+{
+	background-color: #F4FBFC;
+        padding-top: 5%;
+
+}
+.Vrow .column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 500px; 
+}
+
+
+.Vrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col
+{  float: left;
+  width: 79% !important;
+  height: auto !important;
+  padding: 10px;
+
+}
+ .video
+
+{
+	background:url('../img/Video\ -\ About\ Section.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
+
+
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	top: -1%;
+	left: -17px;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:82%;
+	height:97%;
+	background-color: #000;
+}
+@media screen and (max-width: 1024px)
+{.video-container iframe, .video-container object, .video-container embed {
+
+	    width: 84%;
+    height: 94%;
+}
+
+}
+@media screen and (max-width: 768px) {
+  .Vrow .column {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+  .video-container iframe, .video-container object, .video-container embed {
+  	width: 80%;
+}
+  .column.about{
+	clear: left;
+  }
+  .column{
+	width: 80%;
+  }
+
+}
+@media screen and (max-width: 750px)  {
+  .Vrow .column {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  }
+ .video-container iframe, .video-container object, .video-container embed {
+	
+	width:82%;
+	height: 90%;
+	
+}
+}
+
+@media screen and (device-aspect-ratio:40/71) {
+	 .video-container iframe, .video-container object, .video-container embed {
+	
+	width:87%;
+	height: 90%;
+	
+}
+}
+@media screen and (max-width: 518px) and (min-width: 749px)
+{.video-container iframe, .video-container object, .video-container embed {
+	
+	width:83%;}
+
+}
+@media screen and (max-width: 621px)
+{
+		 .video-container iframe, .video-container object, .video-container embed {
+		 	width: 85%;
+		 }
+
+}
+
+@media screen and (max-width: 368px)
+{
+ .video-container iframe, .video-container object, .video-container embed {
+	
+	width:86%;
+	
+}	
+}
+.aboutsection
+{
+	padding: 10px;
+}
+
+.spanabout img
+{
+	vertical-align: middle;
+}
+.aboutp
+{
+	display: inline-block;
+}
+.desc
+{
+	padding: 10px 0;
+}
+.unica-one
+{
+  font-family: 'Unica One', cursive;
+}
+.poppins
+{
+  font-family: 'Poppins', sans-serif;
+}
+.abouttitle
+{
+	color: #0075B3;
+	font-size: 30px;
+	font-weight: lighter;
+}
+.title{
+	text-align: center;
+}

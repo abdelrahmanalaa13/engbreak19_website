@@ -1,0 +1,412 @@
+
+
+
+.navbar {
+    padding: 0;
+    background: transparent;
+    min-height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 99999999999999;
+    
+}
+
+ nav .container .navbar-brand {
+    width: 13%;
+    margin-left: 32px;
+}
+
+ nav .container a .logo {
+    width: 135px;
+}
+
+ nav .container div ul .nav-item .nav-link ,
+ nav .container div ul .nav-item .nav-link:focus,
+ nav .container div ul .nav-item .nav-link:visited {
+    transition: 0.2s ease-out;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 3px 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+
+    margin: 0 20px;
+}
+
+.nav-link {
+    padding: 0
+}
+
+ nav .container div ul {
+    height: 100%;
+}
+li.nav-item{
+    text-align: center;
+}
+img.logo{
+    height: 60px;
+}
+.active-nav,
+ nav .container div ul .nav-item .nav-link:hover {
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    padding: 0;
+
+    color: #ffffff;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script');
+
+
+
+.skrollr .decade {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    min-height: 700px;
+    top: 100%;
+}
+.decade {
+    overflow: hidden;
+    height: 120%;
+    position: relative;
+}
+.decade2000 {
+    z-index: 20;
+}
+
+ .decade header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10px;
+}
+
+ .decade header {
+    text-align: center;
+    color: #FFF;
+    position: relative;
+    z-index: 10;
+}
+.decades.one .decade2000,.decades.one .decade.decade2000 header , .decades.one .decade.decade2000 header:before,  .decade.decade2000 header:after {
+    background: #1B5899;
+}
+.decades.tow .decade2000,.decades.tow .decade.decade2000 header , .decades.tow .decade.decade2000 header:before,  .decade.decade2000 header:after {
+    background: #74A3D1
+}
+.decades.three .decade2000,.decades.three .decade.decade2000 header , .decades.three .decade.decade2000 header:before,  .decade.decade2000 header:after {
+    background: #507B9B
+}
+.decades.four .decade2000,.decades.four .decade.decade2000 header , .decades.four .decade.decade2000 header:before,  .decade.decade2000 header:after {
+    background: #CFB12B
+}
+.decades.five .decade2000,.decades.five .decade.decade2000 header , .decades.five .decade.decade2000 header:before,  .decade.decade2000 header:after {
+    background: #3D85BF;
+}
+.decades.six .decade2000,.decades.six .decade.decade2000 header , .decades.six .decade.decade2000 header:before,  .decade.decade2000 header:after {
+    background: #EBA425;
+}
+.decades.seven .decade2000,.decades.seven .decade.decade2000 header , .decades.seven .decade.decade2000 header:before,  .decade.decade2000 header:after {
+    background: #789CB6;
+}
+.decades.eight .decade2000,.decades.eight .decade.decade2000 header , .decades.eight .decade.decade2000 header:before,  .decade.decade2000 header:after {
+    background: #837B86;
+}
+.decades.nine .decade2000,.decades.nine .decade.decade2000 header , .decades.nine .decade.decade2000 header:before,  .decade.decade2000 header:after {
+    background: rgb(39, 44, 9);
+}
+
+ .decade header:before,  .decade header:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    border: 5px solid #FFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #7ec8ed;
+    z-index: 10;
+}
+header h2 {
+    font-size: 30px;
+    margin: 0;
+    padding: 30px 0 10px;
+}
+.decade header h2 span {
+    font-size: 70px;
+}
+
+ .decade header:after {
+    display: none;
+}
+
+ .decade header:after {
+    top: 95%;
+    display: block!important;
+}
+
+
+ .decade .inner {
+    position: absolute;
+    min-height: 0px;
+    bottom: 10px;
+    top: 230px;
+    width: 100%;
+    max-width: 1200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+@media only screen and (max-height: 800px)
+{
+.decade .inner {
+    top: 125px;
+    max-height: 500px;}
+}
+.decade .container:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 1px solid #FFF;
+    height: 100%;
+    z-index: -1;
+}
+.decades .fact {
+    color: #FFF;
+    max-width: 42%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+    z-index: 250;
+}
+
+
+    .decades .fact {
+        max-width: 42%;
+    }
+    
+    .fact p {
+        margin: 0.1em 0;
+    }
+
+    .js .hide-if-js {
+        display: none;
+    }
+    .decades .fact {
+        color: #FFF;
+        max-width: 42%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: right;
+        z-index: 250;
+    }
+    
+.decades .fact {
+    max-width: 42%;
+}
+
+.decades .fact.top-right {
+    left: auto;
+    right: 0;
+    text-align: left;
+}
+
+img {
+    vertical-align: middle;
+}
+.decade .inner img {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    max-width: 100%;
+}
+@media only screen and (max-height: 800px)
+{.decade .inner img {
+    width: 700px;
+}
+}
+.decades .fact {
+    color: #FFF;
+    max-width: 42%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+    z-index: 250;
+}@media only screen and (max-height: 800px)
+{.decades .fact {
+    max-width: 42%;
+}
+}
+.decades .fact.bottom-right {
+    top: 50%;
+    margin-top: 185px;
+    left: auto;
+    right: 0;
+    text-align: left;
+}
+.decades .fact.bottom-left {
+    top: 33%;
+    margin-top: 185px;
+    right: auto;
+    left: 0;
+    text-align: right;
+}
+
+.decades .fact.bottom-left,  .decades .fact.bottom-right {
+    margin-top: 125px;
+
+}
+
+
+
+
+ .fact.bottom-left,  .fact.bottom-right {
+    margin-top: 105px;
+}
+
+.decades .fact.bottom-left {
+    top: 33%;
+    margin-top: 185px;
+}
+
+
+.decades .fact p{
+    font-style: italic;
+      font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+}
+.decades h2,.decades .fact h3{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 700;
+    letter-spacing:3px;
+}
+
+.text-left{
+    text-align: left
+}
+
+
+.side-btn-cnt li a{
+	display: block; 
+	height: 16px;
+	width: 16px;
+	border: none;
+	background: #FFF;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin: 0;
+	position: relative; 
+}
+.side-btn-cnt li a span{
+    display: block;
+    	position: absolute; 
+	color: #FFF; 
+      font-family: 'Nunito', sans-serif;
+	font-weight: 900;
+	left: -110px; 
+	text-align: right;
+	top: -2px;
+	width: 100px;
+}
+.side-btn-cnt li a:hover , 
+.side-btn-cnt li.active a{
+	border: 3px solid #FFF;
+	padding: 0;
+	background: transparent;
+}
+.side-btn-cnt li.active a span, 
+.side-btn-cnt li :hover a span{
+	top: -5px;
+	left: -113px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 900px) {
+    .navbar{
+        background: #041626;
+        min-height: 80px;
+    }
+    
+.fullscreen-section{
+    padding-top: 80px
+}
+    .container{
+		height: auto; 
+    }
+    .decades .inner{
+        padding: 20px
+    }
+	.decades > .decade .inner{
+		min-height: 0px;
+	}
+	.decades > .decade header:after{ 
+		display: none; 
+	}
+	
+	.decades .decadepre1950 .fact,
+	.decades .fact {
+		max-width: 700px;
+		position: relative;
+		top: auto;
+		left: auto;
+		text-align: left;
+		margin: 30px 0!important; /*Force overrule manual adjustments in one go */
+	}
+	.decades .decade1980 .fact.bottom-right ,.decades .decade1980 .fact.bottom-left{
+		max-width: 100%; 
+	}
+	.decades .fact.bottom-right ,.decades .fact.bottom-left {
+		top: auto;
+		bottom: auto;
+        right: auto;
+        text-align: left;
+	}
+	.decade .inner img{
+		position: relative;
+		right: auto;
+		left: auto;
+		margin: auto;
+		top: auto;
+		bottom: auto;
+	}
+	.decade .container:before,
+	.decade .container:after{
+		display: none; 
+	}
+	
+}
+
+@media only screen and (max-width: 450px) {
+	.decades > .decade header h2 {
+		font-size: 30px;
+	}
+	.decades > .decade header h2 span {
+		font-size: 65px;
+	}
+	.decades .fact p{
+		font-size: 15px;
+	}
+}
+

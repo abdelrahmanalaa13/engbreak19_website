@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eng Break'19 Opening</title>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Opening Ceremony" />
+    <meta name="description" content="Career Hub 2.0 - Eng Break'19 Opening Ceremony">
+    <meta name="keywords" content="Engbreak,Opening,Engbreak19">
+    <meta name="author" content="Eng Break">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://engbreak19.com/opening19/" />    
+    <meta property="og:image" content="http://engbreak19.com/opening19/img/Cover.jpg" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Open+Sans|Sarala" rel="stylesheet">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- start loader -->
+    <!-- befor loading -->
+    <div id="loader">
+        <div id="wave_loader">
+          <div class="container">
+            <div class="coast">
+              <div class="wave-rel-wrap">
+                <div class="wave"></div>
+              </div>
+            </div>
+            <div class="coast delay">
+              <div class="wave-rel-wrap">
+                <div class="wave delay"></div>
+              </div>
+            </div>
+            <div class="text text-e">E</div>
+            <div class="text text-n">N</div>
+            <div class="text text-g">G</div>
+            <div class="text text-b">B</div>
+            <div class="text text-r">R</div>
+            <div class="text text-ee">E</div>
+            <div class="text text-a">A</div>
+            <div class="text text-k">K</div>
+          </div>
+        </div>
+      <!-- befor loading -->
+        <!-- after loading -->
+        <div id="letter_loader">
+            <canvas id="canvas"></canvas>
+          <div class="letter_container">
+            <div class="e letter">E</div>
+            <div class="n letter">N</div>
+            <div class="g letter">G</div>
+            <div class="b letter">B</div>
+            <div class="r letter">R</div>
+            <div class="ea letter">EA</div>
+            <div class="k letter">K'19</div>
+          </div>
+          <br>
+          <div class="letter_container">
+            <div class="o letter">O</div>
+            <div class="p letter">P</div>
+            <div class="e letter">E</div>
+            <div class="n letter">N</div>
+            <div class="i letter">I</div>
+            <div class="n letter">N</div>
+            <div class="g letter">G</div>
+          </div>
+        </div>
+      </div>
+      <!-- after loading -->
+    <!-- end loader -->
+  <header class="intro">
+      <nav>
+          <a href="../"><img src="img/engbreak_logo.png" alt="engbreak_logo" /></a>
+        </nav> 
+    <div class="slider">
+    <ul>
+       <li style="background-image: url(img/2.jpg);">
+         <div class="center">
+         
+        </div>
+      </li>
+      <li style="background-image: url(img/1.jpg);">
+       <div class="center">
+       
+      </div>
+    </li>
+    <li style="background-image: url(img/Cover.jpg);">
+     <div class="center">
+      
+    </div>
+  </li>
+</ul>
+<a class="apply" href="#">Apply Now</a>
+
+<a class="previous" href="">
+       <img src="img/arrow-left.png">
+   </a>
+   <a class="next" href="">
+       <img src="img/arrow-right.png">
+   </a>
+</div>
+
+<div class="hide">
+  <a class="goBack" href="#" onclick="goback()" >
+     <img src="img/back.png">
+  </a>
+    
+  <div class="wrapperr divform responsive">
+    <span class="form_title">Registration Form</span>
+    <form class=" form" name="myForm" onsubmit="return validateForm()" id="myform" action="submit.php" method="POST">
+      <label for="name">Name</label>
+      <input required type="text" id="name" name="name" autocomplete="off">
+      <label for="phone">Phone</label>
+      <input required onkeyup="valid(this);check(this)" onkeypress="return isNumber(event)" type="number" id="phone" name="phone" autocomplete="off">
+      <label for="email">Email</label>
+      <input required type="email" id="email" name="email" autocomplete="off">
+      <label for="uni">Faculty</label>
+      <input required type="text" id="uni" name="faculty" autocomplete="off">
+      <label for="uni">University</label>
+      <input required type="text" id="uni" name="university" autocomplete="off">
+      <div class="sponsor">
+          <p class="sponsor_Qus">Are you interested in Engineering paid courses like (3d max, ethical hacker and CHFI v8) by our sponsor CLS 
+          <br><b>"If you press Yes you will recieve a mail with CLS courses and offers"</b></p>
+          <label for="yes">Yes</label>
+          <input id="yes" type="radio" name="sponsor" value="yes" required>
+          <label for="no">No</label>
+          <input id="no" type="radio" name="sponsor" value="no" required>
+      </div>
+      <input name="submit" type="submit"  value="submit">
+    </form>
+  </div>
+  <div class="sponsor">
+        <p>Sponsored By</p>
+    	<div>
+        	<a href="https://tactful.ai/" target="_blank">
+            	<img src="img/Tactful_logo.png" alt="Tactful">
+        	</a>
+    	</div> 
+    	<div>
+          <a href="http://www.clslearn.com/" target="_blank">
+              <img src="img/cls.png" alt="Cls Learn">
+    		</a>
+    	</div>
+    </div>
+</div>
+
+</header>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+</body>
+</html>

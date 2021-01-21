@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Permanent+Marker');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: grid;
+/*  place-content: center;*/
+    background: #063054;
+   box-sizing: border-box;
+font-family: 'Nunito', sans-serif;
+  }
+  p,span,a,i,li{
+      font-family: 'Nunito', sans-serif;
+  }
+  h1,h2,h3,h4{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 700;
+  
+  }/* nav bar code */ 
+
+.intro {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-image: url(images/cover.jpg);
+  background-size: cover;
+  /* background-attachment: fixed; */
+
+background-position: center;
+}
+
+
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #3b392f5c;
+}
+.intro .content .text{
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  text-align: center;
+}
+.intro .content h2{
+  font-size: 65pt;
+  font-weight: 700;
+  font-family: 'Permanent Marker', cursive;
+}
+.intro .content p a{
+  font-size: 27px;
+	color: #FFC80A;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+}
+
+/*sticky header position*/
+.sticky.is-sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.intro .content .next {
+  width: 40px;
+  bottom: 30px;
+  text-align: center;
+  margin-top: 15%;
+}
+
+header {
+  position: relative;
+  /*    top: -105px;*/
+  color: white;
+}
+
+nav {
+  background: #041626;
+  min-height: 80px;
+}
+.dropdown-menu{
+  background: #041626;
+  
+}
+.dropdown-item{
+  color: #FFFFFF
+}
+.navbar {
+  padding: 0;
+}
+
+header nav .container .navbar-brand {
+  width: 13%;
+  margin-left: 32px;
+}
+
+header nav .container a .logo {
+  width: 135px;
+}
+
+header nav .container div ul .nav-item .nav-link ,
+header nav .container div ul .nav-item .nav-link:focus,
+header nav .container div ul .nav-item .nav-link:visited {
+  transition: 0.2s ease-out;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 3px 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+
+  margin: 0 20px;
+}
+
+.nav-link {
+  padding: 0
+}
+
+header nav .container div ul {
+  height: 100%;
+}
+
+.active-nav,
+header nav .container div ul .nav-item .nav-link:hover {
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  padding: 0;
+
+  color: #ffffff;
+
+}
+
+.bg{
+    position: absolute;
+    width: 100%;
+}
+.getright{
+    position: absolute;
+    right: 23px;
+    top: 30px;
+}
+.getright ul li {
+    margin-right: 60px;
+}
+.navlink {
+    color: white;
+    font-size: 20px;
+}
+.inter {
+/*    background-image: url(images/cover.jpg);*/
+    background-color: rgba(0,0,0,.5);
+     width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.inter img {
+    width: 100%;
+    height: 100vh;
+    filter: brightness(50%);
+}
+.st{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    color: white;
+    
+}
+.page-scroll{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+}
+.page-scroll .btn-circle i.animated {
+  transition-property: transform;
+  transition-duration: 1s;
+    animation: pulse 1.5s infinite linear;
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.btn-circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 60px;
+  font-size: 40px;
+  color: white;
+  transition: background .4s ease-in-out;
+}
+
+.btn-circle:hover, .btn-circle:focus {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+}
+/*--------------------------------------------------------*/
+/* the grid code */
+.waterfall {
+  width: 80vw;
+  margin: 10em auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    /*
+    this code line use repeat function it repeat the col as possible as continar will filland the img min size 150px and max size is 1 fr */
+  grid-gap: 1em;
+  grid-auto-flow: row dense;
+    /*fill the grid row by row and fill the holes by suit item */
+  grid-auto-rows: 10vh;
+}
+/* from 44 to 52 this he make a calculation to suit his code but it depend on the img sizes so u should put imges carefull as it size */ 
+.waterfall .item:nth-of-type(3n+1) {
+  grid-row: auto / span 3;
+}
+.waterfall .item:nth-of-type(3n+2) {
+  grid-row: auto / span 4;
+}
+.waterfall .item:nth-of-type(3n+3) {
+  grid-row: auto / span 5;
+}
+.waterfall .item {
+  overflow: hidden;
+  transform: rotate(-7.5deg);
+  filter: saturate(0) contrast(100%) brightness(100%) sepia(80%);
+  transition: transform 0.2s, border 0.1s;
+  border: 1em solid transparent;
+}
+.waterfall .item img {
+  cursor: pointer;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+    transform: rotate(15deg);
+    transition: all 0.3s;
+}
+.waterfall  .inbound {
+    transform: rotate(0);
+    filter: none;
+    border-bottom: 1px solid white;
+}
+.waterfall  .inbound img {
+          transform: rotate(0);
+}
+.item  p{
+    display: none;
+}
+.item:hover p {
+    display: block;
+	font: bold 2em monospace;
+  color: white;
+	border-right: .1em solid black;
+	width: calc(0.55em * 14); 
+	width: 14ch;
+	white-space: nowrap;
+	overflow: hidden;
+animation: typing 8s steps(14, end),
+	           textAnim .5s step-end infinite alternate;
+}
+@keyframes textAnim {
+  0% {font-size: 16px; fill: white;}
+  10% {font-size: 25px; fill: red;}
+  40% {font-size: 20px; fill: orange;}
+  100% {font-size: 16px; fill: white;}
+}
+@keyframes typing {
+    from { width: 0; } 
+}
+
+/* -----------------------------------------------*/
+/* the popup img code */
+.showimg{
+  z-index: 999;
+  display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.showimg .over{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.showimg .img-show{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.showimg span i{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    z-index: 9999999999;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+.img-show img{
+    width: 100%;
+    height: 100%;
+}
+.words-show{
+    width: 100%;
+    position: absolute;
+    top: 72%;
+    left: 22%;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px){ 
+.showimg .img-show{
+    width: 300px;
+    height: 200px;
+    }
+    .words-show{
+      visibility: hidden;
+    }
+    .btn-circle {
+        font-size: 20px;
+    }
+}
+/* -------------------------------------------------*/ 
+
+footer{
+  clear: both;
+  width: 100%;
+  background: #041626;
+  font-size: 14px;
+  text-align: center;
+  color: #FFF;
+  margin: 0;
+  margin-top:50px; 
+  overflow: hidden;
+}
+footer p{
+  margin: 0;
+  padding: 5px;
+}
+footer a{
+    color: #eba425;
+}
+footer p a:hover{
+  text-decoration: none;
+}

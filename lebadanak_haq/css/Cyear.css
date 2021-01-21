@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#currentyear {
+  background-image: url(../img/cover-section.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: table;
+  color: #FFF;
+  min-height: 600px;
+
+}
+
+#currentyear .title {
+  color: #FFF;
+  margin-bottom: 65px;
+}
+
+#currentyear .title span {
+  color: gold
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: auto;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.left {
+  width: 40%;
+  padding-bottom: 65px;
+}
+
+.right {
+  width: 60%;
+  text-align: left;
+  float: right;
+  margin: 0 auto;
+  padding-left: 50px
+}
+#Moredetails{
+  text-align: center;
+}
+#Moredetails .game_detail{
+  display: inline-block;
+  text-align: center;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+#Moredetails .game_detail img{
+  width: 50px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.currentyear {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+h2 {
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+h6 {
+  margin: 0px;
+  color: #777;
+}
+
+.tabs {
+  margin: 5px 0;
+  font-size: 15px;
+  padding: 0px;
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.tabs a {
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 20px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  transition-duration: 0.6s;
+  box-shadow: 0px 1px grey;
+  border: 1px solid #48444438;
+  margin-bottom: 7px;
+  position: relative;
+  display: block;
+  background-color: #ffffff;
+  padding: 25px;
+  border-bottom: 3px solid #cccccc;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.tabs a {
+  position: relative;
+  display: block;
+  background-color: #ffffff;
+  padding: 25px;
+  border-bottom: 3px solid #0075b3;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.tabs a small {
+  text-transform: lowercase;
+  font-style: italic;
+}
+
+.tabs a {
+  color: #fff;
+  background-color: #E5B122;
+  padding: 25px;
+  border-bottom: 3px solid #996600;
+  cursor: pointer;
+}
+
+.tabs a {
+  border-radius: 4px
+}
+
+.tabs a .fa {
+  font-size: 35px;
+  vertical-align: middle;
+  margin-right: 20px;
+  float: left;
+  clear: both;
+  margin-top: 5px;
+}
+
+
+a.active,
+.tabs a:hover {
+  color: #0075b3;
+  background-color: #fff;
+}
+
+.icon {
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+.ds {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .currentyear .row .column {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .currentyear .row .column .tabs {
+    width: 100%;
+  }
+
+
+}
+
+.cont {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
+.cont h2 {
+  letter-spacing: 1.5px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+}
+.cont p{
+  font-size: 18px;
+
+}

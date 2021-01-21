@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1.2px;
+    transition: 0.2s ease-in-out;
+      
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #FFF;
+    letter-spacing: 8px;
+    line-height: 3.5em;
+    font-family: 'Nunito', sans-serif;
+
+}
+  p,span,a,i,li{
+      font-family: 'Nunito', sans-serif;
+  }
+  h1,h2,h3,h4{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 700;
+  
+  }/* nav bar code */ 
+
+/* Style the video: 100% width and height to cover the entire window */
+
+
+.intro {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background: #4B312C;
+}
+
+.intro>#myVideo {
+    width: 100%;
+    height: 100% !important;
+    object-fit: unset;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(59, 57, 47, 0.5);
+}
+
+.content>p {
+    font-family: inherit;
+    font-size: 4vw;
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+}
+
+.content>p>.type-cursor {
+    color: #fff;
+    animation: blink .4s ease infinite;
+    opacity: 0;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 1;
+    }
+}
+
+/*sticky header position*/
+.sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.intro .content .next {
+    width: 40px;
+    bottom: 30px;
+    text-align: center;
+    position:absolute;
+}
+
+header {
+    position: relative;
+    /*    top: -105px;*/
+    color: white;
+}
+
+nav {
+    background: #041626;
+    min-height: 80px;
+}
+.dropdown-menu{
+    background: #041626;
+    
+}
+.dropdown-item{
+    color: #FFFFFF
+}
+.navbar {
+    padding: 0;
+    color: #FFF;
+}
+
+header nav .container .navbar-brand {
+    width: 13%;
+    margin-left: 32px;
+}
+
+header nav .container a .logo {
+    width: 135px;
+}
+
+header nav .container div ul .nav-item .nav-link ,
+header nav .container div ul .nav-item .nav-link:focus,
+header nav .container div ul .nav-item .nav-link:visited {
+    transition: 0.2s ease-out;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 3px 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+
+    margin: 0 20px;
+}
+
+.nav-link {
+    padding: 0
+}
+
+header nav .container div ul {
+    height: 100%;
+}
+
+.active-nav,
+header nav .container div ul .nav-item .nav-link:hover {
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    padding: 0;
+
+    color: #ffffff;
+
+}
+li.nav-item{
+    text-align: center;
+}
+img.logo{
+    height: 60px;
+}
+/*about section*/
+.theme {
+    padding: 7% 3%;
+    font-size: 1.5em;
+}
+
+.image {
+    float: right;
+    width: 100%;
+}
+
+.about {
+    color: #FFFFFF;
+}
+
+.more {
+    color: #EBA425;
+    text-decoration: none;
+    text-align: center;
+}
+.more:hover{
+  color: #909912;
+  text-decoration: none;
+}
+/*our section*/
+.our {
+    background-image: url(../img/V_M_BG.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+}
+
+.our .backg {
+    background-color: rgba(0, 0, 10, 0.7);
+    padding: 4%;
+}
+
+.our div div div div .title {
+    font-size: 4em;
+    
+}
+.our p{
+    color:#fff;
+    letter-spacing:1px;
+}
+.part {
+    color: #FFFFFF;
+    padding: 0 8%;
+    letter-spacing: 3px;
+    line-height: 1.5em;
+}
+
+.part .p1 {
+    font-size: 2em;
+    padding: 3% 0;
+
+}
+.teamS{
+  background: #FFFFFF;
+  padding: 40px 0;
+}
+.teamS h2.head
+{
+
+  text-align: center;
+  padding: 50px;
+  color: #eba425;
+  text-shadow:0.2px 0.2px #2c475c;
+  font-size: 45px;
+
+}
+.pic.paragraph
+{
+      text-align: center;
+  padding: 59% 14%;
+  vertical-align: center;
+  background-color: blue;
+}
+.pic.paragraph:hover
+{
+  background-color: yellow;
+}
+    .roww
+
+  {
+      width: 100%;
+  }
+  .roww:after
+  {
+      content: "";
+display: table;
+clear: both;
+  }
+  .coll
+  {
+/*    	width: 50%;*/
+      
+      float:left;
+  }
+  .r1
+  {
+      display: inline-block;
+      margin: auto;
+  }
+  .square {
+width: 100px;
+height: 100px;
+margin: 21px;
+-ms-transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+overflow: hidden;
+}
+
+.viewteam  {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  background-color: blue; 
+
+}
+.teamdiv div
+{
+padding: 6%;
+}
+.pic {
+
+width: 150px;
+height: 150px;
+margin: -25px;
+-ms-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+transform: rotate(45deg);
+
+
+}
+
+.negativemargin
+{
+  margin-top: -50px;
+}
+
+.committee{
+display: none;
+}
+
+
+
+.member-info {
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg) translate(-15px, 4px);
+  left: 0;
+  right: 0;
+  z-index: 2;
+  text-align: center;
+}
+
+.member-info h3,
+.member-info p {
+  margin: 0;
+  color: #fff;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  line-height: 14px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.member-info h3 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  top: -100px;
+}
+
+.member-info p {
+  font-weight: 700;
+  font-size: 10px;
+  bottom: -150px;
+}
+
+.member-details > div:after {
+  content: '';
+  background-image: linear-gradient(45deg, rgba(235, 164, 37, 0.8) 52%, transparent 52%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.member-details > div {
+  position: relative;
+  overflow: hidden;
+}
+/* hover content - onhover */
+.member-details *,
+.member-details > div:after {
+  cursor: pointer;
+transition: all .4s ease;
+}
+
+.member-hover *,
+.member-hover > div:after,
+.member-hover h3,
+.member-hover p  {
+  opacity: 1;
+visibility: visible;
+/* margin: 3px; */
+}
+
+.member-hover .member-info h3 {
+  top: 0;
+}
+
+.member-hover .member-info p {
+  bottom: 0;
+}
+.leave{
+opacity: .5;
+}
+.justify-content-center{
+  text-align: center;
+}
+
+
+@media screen and (max-width: 650px)
+{
+.square
+  {
+      margin:0 !important;
+  transform: rotate(0);
+  display: inline-block;
+  width: 50%;
+
+  }
+#zainab.square
+{
+  width: 150px;
+}
+.pic{
+      transform: rotate(0);
+  }
+  .member-info{
+    transform:rotate(0deg) translate(0px, 10px)
+
+  }
+  .member-details > div:after{
+    transform:linear-gradient(0deg, rgba(228, 82, 69, .8) 50%, transparent 50%)
+  }
+
+}
+
+footer{
+  clear: both;
+  width: 100%;
+  background: #041626;
+  font-size: 14px;
+  text-align: center;
+  color: #FFF;
+  margin: 0;
+  margin-top:50px; 
+  overflow: hidden;
+}
+footer p{
+  margin: 0;
+  padding: 5px;
+}
+footer p a:hover{
+  text-decoration: none;
+}
